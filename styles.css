@@ -1,0 +1,143 @@
+html, body{
+height: 100%;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-align: left;
+  background-color: hsl(30, 38%, 92%);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+    .tarjeta {
+    max-width: 600px; 
+    min-height: 500px;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    position: relative;
+    margin: 50px;
+    }
+        .ladoIzq, .ladoDer {
+        width: 100%;
+        }
+        .ladoIzq{
+            height: auto;
+            width: 500px;
+            background-size: cover;
+            border-top-left-radius: 3%;
+            border-bottom-left-radius: 3%;
+            object-fit: scale-down;
+            background-image: url("images/image-product-desktop.jpg");
+            margin-right: 4%;
+        }
+            .titulo {
+            font-family: 'Fraunces', serif;
+            font-weight: 500;
+            color: black;
+            font-size: 30px;
+            padding-right: 10%;
+            padding-top: 5%;
+            }
+            .cuerpo{
+            display: flex;
+            flex-direction: column;
+            }
+                .center{
+                    text-align: center;
+                }
+                p{
+                    padding-right: 15%;
+                    text-align: left;
+                    margin: 7% 0 0 0;
+                    line-height: 1.5rem;
+                }
+                pre{
+                    font-family: 'Fraunces', serif;
+                    color: hsl(158, 36%, 37%);
+                    font-weight: 500;
+                    font-size: 2rem;
+                    margin-right: 8%;
+                    margin-top: 18%;
+                }
+                .tachado{
+                    font-family: 'Montserrat', sans-serif;
+                    text-decoration: line-through;
+                    color: hsl(228, 12%, 48%);
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    bottom: 5px;
+                }
+                .btn {
+                    display: block;
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    top: 25px;
+                    padding: 14px 20px;
+                    background-color: hsl(158, 36%, 37%);
+                    border-radius: 8px;
+                    text-decoration: none;
+                    margin: 5% 15% 2% 0;
+                    text-align: center;
+                }
+                a.btn:hover{
+                opacity: 0.8;
+                }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin: 50px 0 0 0; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 630px){
+    .tarjeta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .ladoIzq{
+        height: 350px;
+        width: 510px;
+        background-size: cover;
+        border-radius: 3%;
+        object-fit: scale-down;
+        background-image: url("images/image-product-mobile.jpg");
+        margin: 0;
+    }
+    .cuerpo{
+        align-items: center;
+        
+    }
+    .titulo{
+        padding-right: 0;
+    }
+    p{
+        padding-right: 0;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 5%;
+    }
+    pre{
+        margin-right: 0;   
+    }
+    .btn{
+        margin: 5% 0 2% 0;
+    }
+    h2{
+        text-align: center;
+    }
+}
